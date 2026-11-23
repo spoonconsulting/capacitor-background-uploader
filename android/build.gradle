@@ -1,0 +1,38 @@
+ext {
+    // Verify these versions against the latest releases before publishing.
+    workVersion = '2.10.0'
+    okhttpVersion = '4.12.0'
+    coreVersion = '1.13.1'
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    namespace = 'com.example.backgrounduploader'
+    compileSdk = 36
+
+    defaultConfig {
+        minSdk = 24
+        targetSdk = 36
+        versionCode 1
+        versionName '0.1.0'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
+    }
+}
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':capacitor-android')
+    implementation "androidx.work:work-runtime:$workVersion"
+    implementation "androidx.core:core:$coreVersion"
+    implementation "com.squareup.okhttp3:okhttp:$okhttpVersion"
+    implementation "com.squareup.okio:okio:3.9.1"
+}
