@@ -13,6 +13,9 @@
     "Package.swift",
     "CapacitorBackgroundUploader.podspec"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json"
   },
