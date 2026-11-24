@@ -8,7 +8,7 @@ Capacitor 8 plugin for background file uploads to S3, Azure Blob and generic HTT
 ## Install
 
 ```bash
-npm install ./path/to/capacitor-background-uploader   # or publish and install from npm
+npm install @spoonconsulting/capacitor-background-uploader   # or publish and install from npm
 npx cap sync
 ```
 
