@@ -1,6 +1,6 @@
 {
   "name": "@spoonconsulting/capacitor-background-uploader",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Capacitor plugin: reliable background uploads to S3, Azure Blob and generic endpoints on iOS (URLSession background) and Android (WorkManager + OkHttp).",
   "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
@@ -11,7 +11,7 @@
     "android/src/main/",
     "android/build.gradle",
     "Package.swift",
-    "CapacitorBackgroundUploader.podspec"
+    "SpoonconsultingCapacitorBackgroundUploader.podspec"
   ],
   "publishConfig": {
     "access": "public"
